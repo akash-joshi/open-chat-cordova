@@ -35,19 +35,10 @@
     </div>
   </span>
  
-	<script>
-  if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js', {
-    scope: './'
-    }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-    });
-    }
-    
-	</script>
   <script src="https://open-chat.now.sh/socket.io/socket.io.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="cordova.js"></script>
   
 
 </body>

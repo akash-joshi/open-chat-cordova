@@ -39,11 +39,7 @@ $(() => {
       ready = true;
       $(".mainwrapper").css('display','flex');
       $('#login').hide();
-      if('Notification' in window){
-        Notification.requestPermission(function(status) {
-          console.log('Notification permission status:', status);
-        });
-      }
+      cordova.plugins.notification.local.requestPermission();
     }
   });
 
